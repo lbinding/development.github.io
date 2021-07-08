@@ -9,7 +9,7 @@ exclude_patterns: [README.md, pages/notebooks/_template.ipynb, data/README.md]
 
 
 repository:
-  url: https://github.com/Disease-Progression-Modelling/disease-progression-modelling.github.io/
+  url: https://github.com/lbinding/development.github.io
 
 html:
   use_issues_button: true
