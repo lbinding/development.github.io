@@ -5,16 +5,35 @@ parts:
   chapters:
   - file: pages/diffusion/introduction
     title: Introduction to Diffusion MRI
-  - file: pages/models/event_based_model
-    title: Event Based Model
-  - file: pages/models/disease_course_mapping
-    title: Disease Course Mapping
-  - file: pages/models/non_parametric_DPM
-    title: GP Progression Model
-- caption: Notebooks
+  - file: pages/diffusion/diffusion_test
+    title: Check your Understanding
+  - file: pages/diffusion/coding_assignment
+    title: Coding Assignment
+- caption: Tractography
   chapters:
-  - file: pages/notebooks/overview
-  - file: pages/notebooks/ebm/ebm
+  - file: pages/tractography/introduction
+    title: Introduction to Tractography
+  - file: pages/tractography/tractography_test
+    title: Check your Understanding
+  - file: pages/tractography/coding_assignment
+    title: Coding Assignment
+- caption: Advanced Tractography
+  chapters:
+  - file: pages/advanced_tractography/workshop
+    title: DTI Workshop
+  - file: pages/advanced_tractography/preprocessing
+    title: MRtrix3 DWI Preprocessing 
+  - file: pages/advanced_tractography/postprocessing
+    title: MRtrix3 DWI Fibre Estimation 
+  - file: pages/advanced_tractography/tractography
+    title: MRtrix3 Tractography 
+  - file: pages/advanced_tractography/connectome
+    title: MRtrix3 Connectome Generation 
+  - file: pages/advanced_tractography/coding_assignment
+    title: Coding Assignment 
+
+
+
     sections:
     - file: pages/notebooks/ebm/T1_kde_ebm_walkthrough.ipynb
       title: Tutorial 1 - EBM Walkthrough

@@ -97,6 +97,65 @@
    Introduction to Diffusion MRI
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diffusion/diffusion_test.html">
+   Check your Understanding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diffusion/coding_assignment.html">
+   Coding Assignment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tractography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tractography/introduction.html">
+   Introduction to Tractography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tractography/tractography_test.html">
+   Check your Understanding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tractography/coding_assignment.html">
+   Coding Assignment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Advanced Tractography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tractography/workshop.html">
+   DTI Workshop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tractography/preprocessing.html">
+   MRtrix3 DWI Preprocessing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tractography/postprocessing.html">
+   MRtrix3 DWI Fibre Estimation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="advanced_tractography/tractography.html">
+   MRtrix3 Tractography
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -197,26 +256,31 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#day-one">
-     Day One
+    <a class="reference internal nav-link" href="#day-one-diffusion">
+     Day One: Diffusion
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#day-two">
-     Day Two
+    <a class="reference internal nav-link" href="#day-two-tractography">
+     Day Two: Tractography
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#day-three">
-     Day Three
+    <a class="reference internal nav-link" href="#day-three-advanced-tractography">
+     Day Three: Advanced Tractography
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#day-four">
-     Day Four
+    <a class="reference internal nav-link" href="#day-four-deep-learning">
+     Day Four: Deep Learning
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
  </li>
 </ul>
 
@@ -231,57 +295,64 @@
                 
   <div class="section" id="ucl-summer-school-diffusion-mri">
 <h1>UCL Summer School: Diffusion MRI<a class="headerlink" href="#ucl-summer-school-diffusion-mri" title="Permalink to this headline">¶</a></h1>
+<style>
+h1 {text-align: center;}
+</style>
 <p>Welcome to the University College London and centre for medical imaging and computing (CMIC) summer school! This is a week long course which aims to introduce you to complex topics so you can apply them to your own research. This course is focused on magnetic resonance imaging (MRI), more specifically diffusion MRI. By the end of this course, you should grasp the concepts of diffusion MRI, tractography, and what future directions the field might be heading in. You will also gain practical skills, learning how to perform tractography from start to finish.</p>
 <div class="section" id="who-are-we">
 <h2>Who are we?<a class="headerlink" href="#who-are-we" title="Permalink to this headline">¶</a></h2>
  <p style="float: left;"><img src="../_static/img/anna.jpg" height="120px" width="140px" style="padding-left: 10px; padding-right: 10px "></p>
-    <p>Anna's studied at XYZ. Her research is focused on **XYZ**. </p>
-<br>
-<br>
-<br>
-<br>
+    <p>Anna studied engineering during her undergraduate, before working as a research assistant for a year studying traumatic brain injury. In 2018, she joined the CDT in medical imaging at UCL. Her current research focusses on modelling the spead of Alzheimer's disease pathology through the brain's structural connectivity network. </p>
 <br>
  <p style="float: left;"><img src="../_static/img/lawrence.jpg" height="120px" width="140px" style="padding-left: 10px; padding-right: 10px "></p>
-    <p>Lawrence completed his undergraduate degree in Psychology and then went on to study neuroimaging for his Masters. He is now at UCL focused on preserving language after temporal lobe epilepsy surgery through avoidance of specific white matter connections. </p>
+    <p>Lawrence completed his undergraduate degree in Psychology and then went on to study neuroimaging for his Masters mainly focused on language and TMS. He joined UCL in 2019 and is now focused on preserving language after temporal lobe epilepsy surgery through avoidance of specific white matter connections. </p>
 <br>
 </div>
 <div class="section" id="programme">
 <h2>Programme:<a class="headerlink" href="#programme" title="Permalink to this headline">¶</a></h2>
 <p>We hope by the end of this week, you should be fully equipped to utilise diffusion MRI in your own research. We have curated and developed a series of tutorials which will start you at diffusion MRI and take you all the way through to deep learning and how it could revolutionise research.</p>
 <p>We have structured the class for those who wish to tackle coding challenges along the way and for those which just want to apply the methodology. As such, the structure of this class will be the following:</p>
-<div class="section" id="day-one">
-<h3>Day One<a class="headerlink" href="#day-one" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="day-one-diffusion">
+<h3>Day One: Diffusion<a class="headerlink" href="#day-one-diffusion" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>Presentation: Introduction to the History of Diffusion MRI</p></li>
+<li><p>Test: The Diffusion Tensor</p></li>
 <li><p>Practical: Diffusion Tensor Estimation</p></li>
 </ol>
 </div>
-<div class="section" id="day-two">
-<h3>Day Two<a class="headerlink" href="#day-two" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="day-two-tractography">
+<h3>Day Two: Tractography<a class="headerlink" href="#day-two-tractography" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
-<li><p>Workshop: Advantages and Disadvantages of the diffusion tensor</p></li>
-<li><p>Practical: Other Methods of Fibre Orientation</p></li>
+<li><p>Presentation: Introduction to Tractography</p></li>
+<li><p>Test: Tractography</p></li>
+<li><p>Practical: Deterministic Tractography Algorithm</p></li>
 </ol>
 </div>
-<div class="section" id="day-three">
-<h3>Day Three<a class="headerlink" href="#day-three" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="day-three-advanced-tractography">
+<h3>Day Three: Advanced Tractography<a class="headerlink" href="#day-three-advanced-tractography" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
-<li><p>Presentation: Tractography</p></li>
-<li><p>Practical: State of the Art Tractography</p></li>
+<li><p>Workshop: Advantages and Disadvantages of DTI</p></li>
+<li><p>MRtrix3: Tractography and Connectome Tutorial</p></li>
 </ol>
 </div>
-<div class="section" id="day-four">
-<h3>Day Four<a class="headerlink" href="#day-four" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="day-four-deep-learning">
+<h3>Day Four: Deep Learning<a class="headerlink" href="#day-four-deep-learning" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>Workshop: Advantages and Disadvantages of tractography</p></li>
 <li><p>Practical: Deep DTI</p></li>
 </ol>
+</div>
+</div>
 <hr class="docutils" />
-<p>We would recommend following the tutorial with the data we have provided. This is because we have used a fake diffusion scan (known as a phantom) which will be quick to run on everyones computers.</p>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<p>We would recommend following the tutorial with the data we have provided. This is because we have used a fake diffusion scan (known as a phantom) which will be quick to run on everyones computers. Please download it from the following link: *** LINK ***</p>
+<hr class="docutils" />
 <p>We hope you have fun! If you have any questions, please contact us using our emails below:</p>
 <p>lawrence.binding.19&#64;ucl.ac.uk</p>
-<p><strong>ANNAS EMAIL</strong></p>
+<p>anna.schroder.18&#64;ucl.ac.uk</p>
 </div>
+<div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>

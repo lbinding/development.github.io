@@ -51,6 +51,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Basic Diffusion Principals" href="diffusion_test.html" />
     <link rel="prev" title="UCL Summer School: Diffusion MRI" href="../main.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -95,6 +96,60 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Introduction to Diffusion MRI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diffusion_test.html">
+   Check your Understanding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="coding_assignment.html">
+   Coding Assignment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tractography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tractography/introduction.html">
+   Introduction to Tractography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tractography/tractography_test.html">
+   Check your Understanding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tractography/coding_assignment.html">
+   Coding Assignment
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Advanced Tractography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced_tractography/workshop.html">
+   DTI Workshop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced_tractography/preprocessing.html">
+   MRtrix3 DWI preprocessing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced_tractography/postprocessing.html">
+   MRtrix3 DWI postprocessing
   </a>
  </li>
 </ul>
@@ -191,25 +246,35 @@
                 
   <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p><em>by Lawrence Binding</em></p>
+<p><em>by Lawrence Binding &amp; Anna Schroder</em></p>
+<div class="tip admonition">
+<p class="admonition-title">Estimated Time</p>
+<p>30 minutes</p>
+</div>
 <p>The brain is the most complex network known. Gone are the days where we would attribute a single cortical region to function. Even simple moter functions requires integration of several cortical regions to ensure we can move without injury.</p>
 <p>A network by definition requires connections, the brain is no different. In the brain these connections are known as white matter fibres; interconnecting cortical grey matter. Thanks to the advancement of diffusion MRI, we are now able to image these fibres whereas before it would require dissection.</p>
 <p>But what is diffusion MRI?</p>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRQodBjVxA1ih621TB6E0h9cyKZ5hFvLdSaUIXSzBiXwWMG8DkxSlPCrrkptR9aTCF8-cjY5agSP2Ib/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<div class="iframe-container">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTMOOztW0kApto64Xd9SXHtlBggIsLIJJf6MT4Wrbl9vOkhdWGQX8uAEu7ZDh2BmEn7a5qrR7v0PtJX/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="562" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+<style>
+  .iframe-container {
+		text-align:center;
+  		width:100%;
+  }
+</style>
+<style>
+h1 {text-align: center;}
+</style>
 <div class="admonition-further-reading admonition">
 <p class="admonition-title">Further reading</p>
 <ul class="simple">
-<li><p>Pioneering works: (Fonteijn - IPMI 2011 / NeuroImage 2012, Jedynak - NeuroImage 2012, Donohue - Alz&amp;Dem 2014,  Young - Brain 2014, Schiratti - NIPS 2015)</p></li>
-<li><p>DPM is receiving increasing interest, exemplified by several large funded projects (H2020 EuroPOND, UK EPSRC C-PLACID, Predict-AD, Predict-ND, JPND E-DADS)</p></li>
-<li><p>Recent series of high-impact results: (Young - Nature Comms 2018; Oxtoby - Brain 2018; Lorenzi - ICML 2018; Garbarino - IPMI 2019 / NeuroImage 2021; Venkatraghavan - IPMI 2019; Pascuzzo - Acta Neuropathologica 2020; Wijeratne - ISMRM 2020; Eshaghi - Nature Comms 2021; Vogel - Nature Medicine 2021).</p></li>
-<li><p>The field continues to expand, and many of the models are becoming established software, used by clinical partners for research on Alzheimer’s Disease (Lopez-Alvez - HAI 2018), multiple sclerosis (Eshaghi - Brain 2018; Nature Comms 2021), ageing (Vinke - Neurobiol. Aging 2018), Huntington’s disease (Wijeratne - ACTN 2018), and Parkinson’s disease (Iddi - NDD 2018; Oxtoby - CompAge 2020, Brain 2021).</p></li>
+<li><p>Everything you need to know: http://mriquestions.com/index.html</p></li>
+<li><p>MRI book: Vlaardingerbroek, M. T., &amp; Boer, J. A. (2013). Magnetic resonance imaging: theory and practice. Springer Science &amp; Business Media.</p></li>
+<li><p>dMRI: Mori, S., &amp; Barker, P. B. (1999). Diffusion magnetic resonance imaging: its principle and applications. The Anatomical Record: An Official Publication of the American Association of Anatomists, 257(3), 102-109.</p></li>
+<li><p>DTI: Soares, J., Marques, P., Alves, V., &amp; Sousa, N. (2013). A hitchhiker’s guide to diffusion tensor imaging. Frontiers in neuroscience, 7, 31.
+Chicago</p></li>
 </ul>
-</div>
-<div class="warning admonition">
-<p class="admonition-title">Something missing?</p>
-<p>Please get in touch! (Or create a fork - branch - update - commit - pull-request :-) )</p>
-<p>We are more than happy to add it to the page, and also to include related models &amp; tutorials to the website content.</p>
-<p>The website is intended to be a platform for the entire community. Get involved!</p>
 </div>
 </div>
 
@@ -239,6 +304,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="../main.html" title="previous page">UCL Summer School: Diffusion MRI</a>
+    <a class='right-next' id="next-link" href="diffusion_test.html" title="next page">Basic Diffusion Principals</a>
 
         </div>
         

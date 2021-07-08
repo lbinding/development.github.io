@@ -1,5 +1,11 @@
 # Introduction
-_by Lawrence Binding_
+_by Lawrence Binding & Anna Schroder_
+
+
+```{admonition} Estimated Time 
+:class: TIP
+30 minutes
+```
 
 The brain is the most complex network known. Gone are the days where we would attribute a single cortical region to function. Even simple moter functions requires integration of several cortical regions to ensure we can move without injury. 
 
@@ -7,27 +13,29 @@ A network by definition requires connections, the brain is no different. In the 
 
 But what is diffusion MRI? 
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRQodBjVxA1ih621TB6E0h9cyKZ5hFvLdSaUIXSzBiXwWMG8DkxSlPCrrkptR9aTCF8-cjY5agSP2Ib/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<div class="iframe-container">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTMOOztW0kApto64Xd9SXHtlBggIsLIJJf6MT4Wrbl9vOkhdWGQX8uAEu7ZDh2BmEn7a5qrR7v0PtJX/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="562" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
 
 
 
+<style>
+  .iframe-container {
+		text-align:center;
+  		width:100%;
+  }
+</style>
+
+<style>
+h1 {text-align: center;}
+</style>
 
 
 ```{admonition} Further reading
-- Pioneering works: (Fonteijn - IPMI 2011 / NeuroImage 2012, Jedynak - NeuroImage 2012, Donohue - Alz&Dem 2014,  Young - Brain 2014, Schiratti - NIPS 2015)
-- DPM is receiving increasing interest, exemplified by several large funded projects (H2020 EuroPOND, UK EPSRC C-PLACID, Predict-AD, Predict-ND, JPND E-DADS)
-- Recent series of high-impact results: (Young - Nature Comms 2018; Oxtoby - Brain 2018; Lorenzi - ICML 2018; Garbarino - IPMI 2019 / NeuroImage 2021; Venkatraghavan - IPMI 2019; Pascuzzo - Acta Neuropathologica 2020; Wijeratne - ISMRM 2020; Eshaghi - Nature Comms 2021; Vogel - Nature Medicine 2021). 
-- The field continues to expand, and many of the models are becoming established software, used by clinical partners for research on Alzheimer’s Disease (Lopez-Alvez - HAI 2018), multiple sclerosis (Eshaghi - Brain 2018; Nature Comms 2021), ageing (Vinke - Neurobiol. Aging 2018), Huntington’s disease (Wijeratne - ACTN 2018), and Parkinson’s disease (Iddi - NDD 2018; Oxtoby - CompAge 2020, Brain 2021). 
+- Everything you need to know: http://mriquestions.com/index.html
+- MRI book: Vlaardingerbroek, M. T., & Boer, J. A. (2013). Magnetic resonance imaging: theory and practice. Springer Science & Business Media.
+- dMRI: Mori, S., & Barker, P. B. (1999). Diffusion magnetic resonance imaging: its principle and applications. The Anatomical Record: An Official Publication of the American Association of Anatomists, 257(3), 102-109.
+- DTI: Soares, J., Marques, P., Alves, V., & Sousa, N. (2013). A hitchhiker's guide to diffusion tensor imaging. Frontiers in neuroscience, 7, 31.
+Chicago	
 ```
 
-
-
-```{admonition} Something missing?
-:class: warning
-
-Please get in touch! (Or create a fork - branch - update - commit - pull-request :-) )
-
-We are more than happy to add it to the page, and also to include related models & tutorials to the website content.
-
-The website is intended to be a platform for the entire community. Get involved!
-```
